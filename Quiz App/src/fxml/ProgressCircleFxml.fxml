@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="61.0" prefWidth="62.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controllers.ProgressCircleFxmlController">
+    <userData>
+        <fx:reference source="controller" ></fx:reference>
+    </userData>
+    <children>
+      <Circle fx:id="Circle" fill="DODGERBLUE" layoutX="60.0" layoutY="63.0" radius="30.0" stroke="BLACK" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="No" alignment="CENTER" layoutX="13.0" layoutY="13.0" prefHeight="31.0" prefWidth="40.0" text="No." textAlignment="JUSTIFY">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

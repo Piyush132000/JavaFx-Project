@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="857.0" prefWidth="1076.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddQuizFxmlController">
+   <children>
+      <SplitPane dividerPositions="0.2737430167597765" layoutX="7.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #EEC213; -fx-border-width: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="57.0" prefWidth="934.0">
+                           <children>
+                              <Text fill="#e0e00d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Add A New Quiz" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <FlowPane>
+                           <children>
+                              <JFXTextField fx:id="quizName" labelFloat="true" prefHeight="39.0" prefWidth="444.0" promptText="Enter Quiz Titile">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="100.0" right="10.0" top="10.0" />
+                                 </FlowPane.margin>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </JFXTextField>
+                              <JFXButton fx:id="setTitle" onAction="#setQuizTitle" prefHeight="51.0" prefWidth="76.0" style="-fx-background-color: #2C3335;" text="Ok" textFill="#f2f2f2">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="100.0" right="10.0" top="10.0" />
+                                 </FlowPane.margin>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </FlowPane>
+                        <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXTextArea fx:id="question" labelFloat="true" prefHeight="100.0" prefWidth="1073.0" promptText="Enter Question">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </JFXTextArea>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <JFXTextField fx:id="option1" labelFloat="true" promptText="Option 1">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="50.0" top="15.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="option2" labelFloat="true" promptText="Option 2">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="option3" labelFloat="true" promptText="Option 3">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="option4" labelFloat="true" promptText="Option 4">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="169.0" prefWidth="1076.0">
+                           <children>
+                              <Text fill="#3c3c1d" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Select A Right Answer" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <JFXRadioButton fx:id="RB1" text="Option 1">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" right="20.0" top="60.0" />
+                                 </HBox.margin>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="RB2" text="Option 2">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" right="20.0" top="60.0" />
+                                 </HBox.margin>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="RB3" text="Option 3">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" right="20.0" top="60.0" />
+                                 </HBox.margin>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="RB4" text="Option  4">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" right="20.0" top="60.0" />
+                                 </HBox.margin>
+                              </JFXRadioButton>
+                           </children>
+                        </HBox>
+                        <FlowPane>
+                           <children>
+                              <JFXButton fx:id="addNextQuestion" onAction="#AddNextQuestion" style="-fx-background-color: #192A56;" text="Add Next Question" textFill="#eae9ee">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </FlowPane.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="submitQuiz" onAction="#SubmitQuiz" style="-fx-background-color: #192A56;" text="Submit Quiz" textFill="#e6e5eb">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </FlowPane.margin>
+                              </JFXButton>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="855.0" prefWidth="746.0">
+               <children>
+                  <JFXTreeView fx:id="TreeView" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
